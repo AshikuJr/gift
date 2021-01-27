@@ -1,0 +1,42 @@
+@import 'src/settings/vars'
+@import 'src/settings/mixins'
+
+.button
+  max-width: 200px
+  border-radius: 5px
+  padding: 12px 20px
+  font-size: 18px
+  text-transform: uppercase
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s
+  &_main-empty
+    color: $main-orange
+    border: 1px solid $main-orange
+    background-color: transparent
+    &:hover
+      color: white
+      border-color: transparent
+      background-color: $main-orange
+  &_main-full
+    color: white
+    border: 1px solid transparent
+    background-color: $main-orange
+    &:hover
+      color: white
+      border-color: black
+      background-color: black
+  &_dark-empty
+    color: black
+    border: 1px solid black
+    background-color: transparent
+    &:hover
+      color: white
+      border-color: transparent
+      background-color: black
+  &_dark-full
+    color: white
+    border: 1px solid transparent
+    background-color: black
+    &:hover
+      color: black
+      border-color: black
+      background-color: transparent

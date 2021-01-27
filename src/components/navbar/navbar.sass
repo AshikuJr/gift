@@ -1,0 +1,27 @@
+@import 'src/settings/vars'
+@import 'src/settings/mixins'
+
+.navbar
+  width: 100%
+  min-height: 80px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 0 50px
+  &-logo
+    margin-right: 110px
+    +m
+      margin-right: 0
+  &-links
+    width: 300px
+    display: flex
+    justify-content: space-between
+    font-size: 18px
+    +m
+      width: 250px
+    +s
+      display: none
+    a
+      transition: 0.2s
+      &:hover
+        color: red
