@@ -1,0 +1,109 @@
+@import 'src/settings/vars'
+@import 'src/settings/mixins'
+
+@keyframes fade
+  0%
+    opacity: 1
+  50%
+    opacity: 0
+  100%
+    opacity: 1
+
+.article
+  height: 240px
+  color: $text
+  background-color: transparent
+  cursor: pointer
+  padding: 20px 30px
+  display: grid
+  grid-template-areas: 't' 'd' 'a'
+  +s
+    height: 200px
+    grid-template-areas: 't' 'a'
+  &:hover
+    box-shadow: 10px 10px 15px rgba(black, 0.05)
+  &__pic
+    grid-area: p
+    display: none
+  &__author
+    grid-area: a
+    font-style: italic
+    align-self: end
+  &__title
+    grid-area: t
+    font-size: 24px
+  &__descr
+    grid-area: d
+    font-size: 18px
+    +s
+      display: none
+  &__readmore
+    grid-area: r
+    display: none
+    color: $text
+  &_active
+    height: 360px
+    grid-area: a
+    color: white
+    background-color: $text
+    box-shadow: none
+    cursor: auto
+    display: grid
+    grid-template-columns: 1fr 0.3fr 1.5fr 0.7fr
+    grid-template-areas: 'p .a .' 'p .t .' 'p .r .'
+    justify-items: start
+    +s
+      height: auto
+      grid-template-columns: 1fr
+      grid-template-rows: 300px
+      grid-template-areas: 'p' 'a' 't' 'r'
+    .article
+      &__pic
+        width: 100%
+        display: block
+      &__author
+        +s
+          padding-left: 10px
+          margin: 20px 0
+      &__title
+        font-size: 48px
+        font-weight: normal
+        align-self: center
+        +m
+          font-size: 40px
+        +s
+          padding-left: 10px
+          margin: 20px 0
+      &__descr
+        display: none
+      &__readmore
+        display: block
+        color: white
+        align-self: center
+        +s
+          padding-left: 10px
+          margin: 20px 0
+.blogs
+  &-wrap
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-top: 80px
+  &-title
+    font-weight: normal
+    font-size: 32px
+  &-subtitle
+    font-size: 18px
+    margin-top: 30px
+  &-articles
+    margin-top: 80px
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 1fr 1fr
+    grid-gap: 40px 30px
+    grid-template-areas: 'a a'
+    +m
+      grid-template-columns: 1fr
+      grid-template-rows: none
+      grid-template-areas: 'a'
