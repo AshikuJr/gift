@@ -1,0 +1,36 @@
+@import 'src/settings/vars'
+@import 'src/settings/mixins'
+
+.orange
+  width: 100%
+  background-color: $main-orange
+  min-height: 240px
+  display: flex
+  flex-direction: row
+  justify-content: space-evenly
+  align-items: center
+  +m
+    flex-direction: column
+  +s
+    font-size: 0.8em
+
+  &-text
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    font-size: 2em
+    line-height: 1.5
+  &-question
+    font-weight: bold
+  &-answer
+  &-buttons
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 360px
+    +s
+      flex-direction: column
+      height: 100px
+      width: 300px
+    +xs
+      width: 100%
