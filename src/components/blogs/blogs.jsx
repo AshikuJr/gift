@@ -11,7 +11,7 @@ const Article = props => {
     <span className="article__author">{props.author}</span>
     <h3 className="article__title">{props.title}</h3>
     <p className="article__descr">{props.descr}</p>
-    <a href="http://ashikujr.github.io/resume/" className="article__readmore">Read More</a>
+    <a href="https://ashikujr.github.io/resume/dist/index.html" className="article__readmore">Read More</a>
   </div>
 };
 

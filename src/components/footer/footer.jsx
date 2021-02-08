@@ -20,19 +20,19 @@ const Footer = props => {
           <a href="#blogs" className="footer-link">Blogs</a>
         </nav>
         <div className="footer-socials">
-          <a href="http://ashikujr.github.io/resume/" className="footer-socials__icon">
+          <a href="https://ashikujr.github.io/resume/dist/index.html" className="footer-socials__icon">
             <img src={fb} alt="fb"/>
           </a>
-          <a href="http://ashikujr.github.io/resume/" className="footer-socials__icon">
+          <a href="https://ashikujr.github.io/resume/dist/index.html" className="footer-socials__icon">
             <img src={twitter} alt="twitter"/>
           </a>
-          <a href="http://ashikujr.github.io/resume/" className="footer-socials__icon">
+          <a href="https://ashikujr.github.io/resume/dist/index.html" className="footer-socials__icon">
             <img src={insta} alt="insta"/>
           </a>
-          <a href="http://ashikujr.github.io/resume/" className="footer-socials__icon">
+          <a href="https://ashikujr.github.io/resume/dist/index.html" className="footer-socials__icon">
             <img src={yt} alt="yt"/>
           </a>
-          <a href="http://ashikujr.github.io/resume/" className="footer-socials__icon">
+          <a href="https://ashikujr.github.io/resume/dist/index.html" className="footer-socials__icon">
             <img src={pin} alt="pin"/>
           </a>
         </div>
